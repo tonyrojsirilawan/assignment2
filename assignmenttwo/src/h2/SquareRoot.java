@@ -10,14 +10,13 @@ public class SquareRoot {
 	
 	if((guess*guess)-x < error){
 		return guess;
-	}else{
-		guess = ((guess + (x / guess))*0.5);
-		SquareRoot(x, error, guess);
-		return guess;
 	}
+		guess = ((guess + (x / guess))*0.5);
+		return SquareRoot(x, error, guess);
+	
 	}
 	public static void main (String[] args){
-		System.out.println(SquareRoot (16.0, 0.0000000000000001, 4.1));
+		System.out.println(SquareRoot (16, 0.00000000000001, 5));
 		
 	}
 
